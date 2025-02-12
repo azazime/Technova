@@ -3,386 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoClean Solutions Blog - Eco-friendly Cleaning Tips and Insights</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Technova Blog - Eco-Friendly Cleaning</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .blog-header {
-            background-color: #f0f8f0;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .blog-header h1 {
-            font-size: 36px;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        .blog-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .blog-post {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
-            overflow: hidden;
-        }
-        .blog-post img {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-        }
-        .blog-content {
-            padding: 20px;
-        }
-        .blog-content h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .blog-content p {
-            margin-bottom: 15px;
-        }
-        .read-more {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .read-more:hover {
-            background-color: #45a049;
-        }
-        .blog-meta {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin-bottom: 15px;
-        }
-        .blog-full-content {
-            display: none;
-        }
-        .blog-full-content.active {
-            display: block;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #45a049;
-        }
-        nav ul.show {
-            display: block;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">EcoClean Solutions</a>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
+        <nav>
+            <div class="logo">Technova</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="thank-you.html">Thank You</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products/Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
 
     <main>
-        <section class="blog-header">
-            <div class="container">
-                <h1>EcoClean Solutions Blog</h1>
-                <p>Discover eco-friendly cleaning tips, insights, and sustainable living ideas</p>
+        <section class="hero blog-hero">
+            <div class="hero-content">
+                <h1>Technova Blog</h1>
+                <p>Insights on Eco-Friendly Cleaning and Sustainability</p>
             </div>
         </section>
 
-        <section class="blog-container">
-            <article class="blog-post" id="post1">
-                <img src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Eco-friendly cleaning products">
-                <div class="blog-content">
-                    <h2>The Ultimate Guide to Eco-Friendly Cleaning: Transform Your Home and the Planet</h2>
-                    <p class="blog-meta">Published on May 15, 2023 | By Mark Kalu</p>
-                    <p>In today's world, where environmental concerns are at the forefront of our minds, it's crucial to consider the impact of our daily activities on the planet. One area where we can make a significant difference is in our cleaning habits. Eco-friendly cleaning not only helps protect the environment but also creates a healthier living space for you and your family.</p>
-                    <button class="read-more" onclick="toggleContent('post1')">Read More</button>
-                    <div class="blog-full-content">
-                        <h2>Understanding Eco-Friendly Cleaning</h2>
-                        <p>Eco-friendly cleaning, also known as green cleaning, refers to using cleaning methods and products that are safe for the environment and human health. This approach minimizes the use of harmful chemicals, reduces waste, and promotes sustainability. By adopting eco-friendly cleaning practices, you can significantly reduce your carbon footprint and contribute to a healthier planet.</p>
-
-                        <h2>The Benefits of Green Cleaning</h2>
-                        <p>Switching to eco-friendly cleaning offers numerous benefits:</p>
-                        <ul>
-                            <li>Improved indoor air quality</li>
-                            <li>Reduced exposure to toxic chemicals</li>
-                            <li>Lower environmental impact</li>
-                            <li>Cost-effective in the long run</li>
-                            <li>Safe for children and pets</li>
-                            <li>Biodegradable and sustainable</li>
-                        </ul>
-
-                        <h2>Essential Eco-Friendly Cleaning Products</h2>
-                        <p>To get started with green cleaning, stock up on these environmentally friendly products:</p>
-                        <ol>
-                            <li>White vinegar: A natural disinfectant and deodorizer</li>
-                            <li>Baking soda: Great for scrubbing and absorbing odors</li>
-                            <li>Lemon juice: Natural bleaching agent and degreaser</li>
-                            <li>Essential oils: Add fragrance and antibacterial properties</li>
-                            <li>Microfiber cloths: Reusable and effective for dusting and cleaning</li>
-                            <li>Castile soap: Versatile, plant-based soap for various cleaning tasks</li>
-                        </ol>
-
-                        <h2>DIY Eco-Friendly Cleaning Solutions</h2>
-                        <p>Creating your own cleaning solutions is easy, cost-effective, and ensures you know exactly what ingredients you're using. Here are a few simple recipes:</p>
-                        <ul>
-                            <li>All-purpose cleaner: Mix equal parts water and white vinegar in a spray bottle. Add a few drops of essential oil for fragrance.</li>
-                            <li>Glass cleaner: Combine 2 cups of water, 1/2 cup of white vinegar, and 1/4 cup of rubbing alcohol in a spray bottle.</li>
-                            <li>Toilet bowl cleaner: Sprinkle baking soda in the bowl, add a cup of white vinegar, and let it fizz for a few minutes before scrubbing.</li>
-                        </ul>
-
-                        <h2>Eco-Friendly Cleaning Techniques</h2>
-                        <p>Adopting these green cleaning techniques can make a big difference:</p>
-                        <ol>
-                            <li>Use reusable cloths instead of paper towels</li>
-                            <li>Opt for natural air fresheners like essential oils or open windows</li>
-                            <li>Choose concentrated products to reduce packaging waste</li>
-                            <li>Properly dispose of or recycle cleaning product containers</li>
-                            <li>Use a steam cleaner for chemical-free deep cleaning</li>
-                            <li>Implement a "shoes off" policy to reduce dirt and chemicals tracked into your home</li>
-                        </ol>
-
-                        <h2>The Impact of Eco-Friendly Cleaning on Your Health</h2>
-                        <p>Switching to green cleaning products can have a significant positive impact on your health. Traditional cleaning products often contain harsh chemicals that can irritate your skin, eyes, and respiratory system. By using eco-friendly alternatives, you reduce your exposure to these harmful substances, potentially lowering the risk of allergies, asthma, and other health issues.</p>
-
-                        <h2>Conclusion</h2>
-                        <p>Embracing eco-friendly cleaning is a powerful way to contribute to a healthier planet while creating a safer, cleaner home environment. By making simple changes in your cleaning routine and choosing green products, you can significantly reduce your environmental impact and improve your quality of life. Remember, every small step counts towards a more sustainable future.</p>
-
-                        <p>Ready to transform your cleaning routine? Explore our range of eco-friendly cleaning products and start your green cleaning journey today!</p>
-
-                        <a href="products.html" class="cta-button">Shop Eco-Friendly Cleaning Products</a>
-                    </div>
+        <section class="blog">
+            <div class="container">
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <img src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80" alt="Eco-Friendly Cleaning" class="blog-image">
+                        <div class="blog-content">
+                            <h2>The Benefits of Eco-Friendly Cleaning</h2>
+                            <p>Discover why eco-friendly cleaning is not just good for the environment, but also for your health and home.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1568&q=80" alt="Green Cleaning at Home" class="blog-image">
+                        <div class="blog-content">
+                            <h2>5 Easy Steps to Start Green Cleaning at Home</h2>
+                            <p>Learn how you can easily transition to eco-friendly cleaning practices in your own home with these simple steps.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
-            </article>
-
-            <article class="blog-post" id="post2">
-                <img src="https://images.unsplash.com/photo-1617104551722-3b2d51366400?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="DIY natural cleaning solutions">
-                <div class="blog-content">
-                    <h2>10 DIY Natural Cleaning Solutions for a Chemical-Free Home</h2>
-                    <p class="blog-meta">Published on May 22, 2023 | By John Uche</p>
-                    <p>In an era where environmental consciousness is on the rise, more and more homeowners are turning to natural, DIY cleaning solutions. These homemade cleaners not only reduce your exposure to harsh chemicals but also minimize your environmental impact. In this article, we'll explore 10 effective DIY natural cleaning solutions that will help you maintain a spotless, chemical-free home.</p>
-                    <button class="read-more" onclick="toggleContent('post2')">Read More</button>
-                    <div class="blog-full-content">
-                        <h2>1. All-Purpose Cleaner</h2>
-                        <p>An all-purpose cleaner is a must-have in any home. This simple recipe works wonders on various surfaces:</p>
-                        <ul>
-                            <li>1 cup white vinegar</li>
-                            <li>1 cup water</li>
-                            <li>15-20 drops of essential oil (lemon, tea tree, or lavender work great)</li>
-                        </ul>
-                        <p>Mix the ingredients in a spray bottle, shake well, and use it on countertops, tables, and other hard surfaces. The vinegar acts as a natural disinfectant, while the essential oils add a pleasant fragrance.</p>
-
-                        <h2>2. Glass and Mirror Cleaner</h2>
-                        <p>Say goodbye to streaky windows and mirrors with this effective solution:</p>
-                        <ul>
-                            <li>2 cups water</li>
-                            <li>1/2 cup white vinegar</li>
-                            <li>1/4 cup rubbing alcohol (70% concentration)</li>
-                        </ul>
-                        <p>Combine the ingredients in a spray bottle and use it with a lint-free cloth or newspaper for streak-free shine.</p>
-
-                        <h2>3. Bathroom Scrub</h2>
-                        <p>Keep your bathroom sparkling clean with this powerful scrub:</p>
-                        <ul>
-                            <li>1/2 cup baking soda</li>
-                            <li>1/4 cup liquid castile soap</li>
-                            <li>1 tablespoon white vinegar</li>
-                        </ul>
-                        <p>Mix the ingredients to form a paste. Use it to scrub bathtubs, sinks, and tiles. Rinse thoroughly with warm water.</p>
-
-                        <h2>4. Carpet Freshener</h2>
-                        <p>Eliminate carpet odors naturally with this simple recipe:</p>
-                        <ul>
-                            <li>1 cup baking soda</li>
-                            <li>15-20 drops of your favorite essential oil</li>
-                        </ul>
-                        <p>Mix the baking soda and essential oil in a jar. Sprinkle the mixture on your carpet, let it sit for 15-20 minutes, then vacuum thoroughly.</p>
-
-                        <h2>5. Wood Polish</h2>
-                        <p>Keep your wooden furniture looking its best with this natural polish:</p>
-                        <ul>
-                            <li>1/4 cup olive oil</li>
-                            <li>1/4 cup white vinegar</li>
-                            <li>10 drops lemon essential oil (optional)</li>
-                        </ul>
-                        <p>Mix the ingredients in a spray bottle. Shake well before each use, spray on a soft cloth, and wipe down wooden surfaces.</p>
-
-                        <h2>6. Drain Cleaner</h2>
-                        <p>Unclog drains without harsh chemicals using this fizzy solution:</p>
-                        <ul>
-                            <li>1/2 cup baking soda</li>
-                            <li>1/2 cup white vinegar</li>
-                            <li>Boiling water</li>
-                        </ul>
-                        <p>Pour the baking soda down the drain, followed by the vinegar. Cover the drain and let it sit for 15 minutes. Then, flush with boiling water.</p>
-
-                        <h2>7. Oven Cleaner</h2>
-                        <p>Tackle tough oven grime with this natural cleaner:</p>
-                        <ul>
-                            <li>1/2 cup baking soda</li>
-                            <li>1/4 cup liquid castile soap</li>
-                            <li>1 tablespoon white vinegar</li>
-                            <li>Water (as needed)</li>
-                        </ul>
-                        <p>Mix the ingredients to form a paste. Apply to the oven interior, avoiding heating elements. Let it sit overnight, then wipe clean with a damp cloth.</p>
-
-                        <h2>8. Toilet Bowl Cleaner</h2>
-                        <p>Keep your toilet clean and fresh with this natural solution:</p>
-                        <ul>
-                            <li>1/2 cup baking soda</li>
-                            <li>1/4 cup white vinegar</li>
-                            <li>10 drops tea tree essential oil</li>
-                        </ul>
-                        <p>Sprinkle baking soda into the toilet bowl, add vinegar and essential oil. Let it fizz for a few minutes, then scrub with a toilet brush and flush.
-
-<h2>9. Stainless Steel Cleaner</h2>
-<p>Make your stainless steel appliances shine with this simple mixture:</p>
-<ul>
-    <li>1/4 cup olive oil</li>
-    <li>1/4 cup white vinegar</li>
-</ul>
-<p>Mix the ingredients in a spray bottle. Spray on a soft cloth and wipe in the direction of the grain. Buff with a clean cloth for extra shine.</p>
-
-<h2>10. Air Freshener</h2>
-<p>Create a natural, chemical-free air freshener:</p>
-<ul>
-    <li>1 cup water</li>
-    <li>1/4 cup vodka or rubbing alcohol</li>
-    <li>20-30 drops of your favorite essential oil(s)</li>
-</ul>
-<p>Combine the ingredients in a spray bottle. Shake well before each use and spray as needed to freshen your home.</p>
-
-<h2>Benefits of DIY Natural Cleaning Solutions</h2>
-<p>Using these homemade cleaners offers numerous advantages:</p>
-<ul>
-    <li>Cost-effective: Most ingredients are inexpensive and readily available</li>
-    <li>Environmentally friendly: Reduces plastic waste and harmful chemicals</li>
-    <li>Safe for families and pets: No toxic residues or fumes</li>
-    <li>Customizable: Adjust scents and strengths to your preference</li>
-    <li>Effective: Natural ingredients can be just as powerful as commercial cleaners</li>
-</ul>
-
-<h2>Conclusion</h2>
-<p>Creating your own natural cleaning solutions is a simple yet effective way to maintain a clean, healthy home while reducing your environmental impact. These 10 DIY recipes cover most of your household cleaning needs, allowing you to ditch harmful chemicals and embrace a more sustainable lifestyle.</p>
-
-<p>Ready to start your journey towards a chemical-free home? Check out our eco-friendly cleaning tools and accessories to complement your DIY solutions!</p>
-
-<a href="products.html" class="cta-button">Shop Eco-Friendly Cleaning Tools</a>
-                    </div>
-                </div>
-            </article>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products/Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>123 Eco Street, Green City, EC 12345</p>
-                    <p>Phone: (555) 123-4567</p>
-                    <p>Email: markkalu@gmail.com</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="disclaimer">
-                <p>
-                    The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. If you are the copyright owner of any image and believe it has been used without proper attribution, please contact us, and we will make the necessary corrections.
-                </p>
-                <p>
-                    The views expressed on this site do not necessarily reflect the official policies or positions of the university. The university is not responsible for any errors or omissions or the results obtained from using this information.
-                </p>
-                <p>
-                    By using this website, you acknowledge and agree to these terms.
-                </p>
-            </div>
+        <div class="footer-content">
+            <p>&copy; 2023 Technova. All rights reserved.</p>
+            <p class="disclaimer">
+                The information provided on this website is intended for educational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the university does not guarantee its completeness or effectiveness. This website will be deactivated once the course is completed. Some images used on this site have been sourced from the internet and are included for educational and practice purposes only. If you are the copyright owner of any image and believe it has been used without proper attribution, please contact us, and we will make the necessary corrections.
+            </p>
+            <p class="disclaimer">
+                The views expressed on this site do not necessarily reflect the official policies or positions of the university. The university is not responsible for any errors or omissions or the results obtained from using this information.
+            </p>
+            <p class="disclaimer">
+                By using this website, you acknowledge and agree to these terms.
+            </p>
         </div>
     </footer>
 
-    <script>
-        function toggleContent(postId) {
-            const content = document.querySelector(`#${postId} .blog-full-content`);
-            const button = document.querySelector(`#${postId} .read-more`);
-            
-            if (content.classList.contains('active')) {
-                content.classList.remove('active');
-                button.textContent = 'Read More';
-            } else {
-                content.classList.add('active');
-                button.textContent = 'Read Less';
-            }
-        }
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const nav = document.querySelector('nav ul');
-
-            mobileMenu.addEventListener('click', function() {
-                nav.classList.toggle('show');
-            });
-
-            // Close menu when a link is clicked
-            const navLinks = document.querySelectorAll('nav ul li a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    nav.classList.remove('show');
-                });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', (event) => {
-                const isClickInsideMenu = nav.contains(event.target);
-                const isClickOnToggle = mobileMenu.contains(event.target);
-                if (!isClickInsideMenu && !isClickOnToggle && nav.classList.contains('show')) {
-                    nav.classList.remove('show');
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
 
